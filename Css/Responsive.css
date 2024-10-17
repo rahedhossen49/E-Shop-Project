@@ -1,0 +1,88 @@
+
+/* * Header Responsive Start */
+
+@media (max-width: 768px) {
+
+  #header{
+
+    flex-direction: column;
+  }
+
+
+    .contact, .account {
+        justify-content: center;
+    }
+
+    .register a {
+        margin: 10px 0;
+    }
+
+}
+
+
+@media (min-width: 600px) and (max-width: 800px){
+
+  #header{
+     width: 100%;
+     grid-column: 12;
+     display: flex;
+     justify-content: center;
+  }
+
+  .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main_container .logo{
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+/* * Header Responsive End */
+
+/*
+@media (min-width:600) and (max-width:800){
+  .main_container{
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding: 25px 40px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  ul li  {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  ul li a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  ul li a {
+    text-align: center;
+    float: none;
+  }
+} */
+
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  ul li a, ul li select {
+    padding: 12px 15px; /* Adjust padding for smaller screens */
+    margin: 5px 0; /* Space out items */
+  }
+}

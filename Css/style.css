@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #f8f9fa;
+}
 :root{
   --primary-color: #acbac4;
   --text-color:#333;
@@ -201,7 +209,7 @@ button {
 }
 
 
-ul li a {
+.navlink ul li a {
   display: flex;
   padding: 25px 20px;
   font-size: 19px;
@@ -513,10 +521,116 @@ margin:  15px 0;
 }
 .purchase-btn{
   text-align: center;
+  padding: 10px;
 }
 
 .purchase-btn button{
   padding: 12px 30px;
   color: black;
   background-color: white;
+}
+
+
+.footer {
+  background-color: #1c1c1c;
+  padding: 70px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+/* Left Section */
+.footer-left {
+  flex: 2;
+  min-width: 250px;
+}
+
+.footer-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer-left .highlight {
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Middle Section */
+.footer-middle {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  min-width: 40px;
+  margin: 0 20px;
+
+}
+
+.footer-middle h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+
+}
+
+
+.footer-middle ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Right Section */
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+  margin: 0 20px;
+}
+
+.footer-right h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-right p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #f0a500;
+}
+
+/* Footer Bottom */
+.footer hr {
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-bottom span {
+  color: #f0a500;
 }
